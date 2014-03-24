@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Chatting Window</title>
+
+<link type="text/css" href="css/chat.css" rel="stylesheet"></link>
+<script src="scripts/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="scripts/chat.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<div class="Chat" id="main" style="LEFT: 50px; TOP: 50px">
+<div id="ChatHead">
+<a onclick="ChatHidden();" href="#">-</a> 
+<a onclick="ChatShow();" href="#">+</a> 
+<a onclick="ChatClose();">x</a> </div>
+<div id="ChatBody">
+<div id="ChatContent">
+    
+</div>
+<div id ="Slider">
+  <label id="Reminder" style="visibility:visible">Please rate your feelings now.</label>
+  <input id="emotionSlider" type="range" name="emotionSlider" min="0" max="100" step="10"></input>
+  <img id="sam" src="Image/SAM.png" style="height:100px"></img>
+<div id="SliderMsg" style="display:none">
+
+       <p>Your emotion has been recorded</p>
+</div>
+</div>
+
+<div id="ChatBtn">
+<form action="" method="post" name="chat">
+    <textarea style="width: 98%" rows="6" id="ChatValue"></textarea>
+    <input id="ChatButton" type="button" name="Submit" value="Chat" />
+</form>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
