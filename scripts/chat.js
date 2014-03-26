@@ -60,3 +60,8 @@ function detectChange(el, timeout) {
 	}); 		
 }
 
+$(function(){
+    $("#Reminder").animate({
+        "font-size" : "+=14px"
+    }, 10000);
+});
